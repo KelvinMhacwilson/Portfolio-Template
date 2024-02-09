@@ -6,6 +6,7 @@ import Experience from "./components/Experience/Experience.jsx";
 import Works from "./components/Works/Works.jsx";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Works />
       <Portfolio />
       <Testimonials />
+      <Contact />
     </div>
   );
 }
