@@ -4,6 +4,7 @@ import Intro from "./components/Intro/Intro.jsx";
 import Services from "./components/Services/Services.jsx";
 import Experience from "./components/Experience/Experience.jsx";
 import Works from "./components/Works/Works.jsx";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Services />
       <Experience />
       <Works />
+      <Portfolio />
     </div>
   );
 }
