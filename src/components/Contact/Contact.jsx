@@ -20,7 +20,8 @@ function Contact() {
       })
       .then(
         () => {
-          return setDone(true);
+          setDone(true);
+          form.reset();
         },
         (error) => {
           if(error){

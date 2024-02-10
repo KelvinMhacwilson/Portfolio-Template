@@ -16,7 +16,7 @@ function Navbar() {
             <Link
               spy={true}
               smooth={true}
-              to="Navbar"
+              to="Intro"
               activeClass="activeClass"
             >
               <li>Home</li>
