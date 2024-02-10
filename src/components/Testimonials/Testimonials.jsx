@@ -27,7 +27,7 @@ function Testimonials() {
   ]
 
   return (
-    <div className="t-wrapper">
+    <div className="t-wrapper" id="Testimonial">
       <div className="t-heading">
         <span>Clients always get </span>
         <span>Exceptional Work </span>
@@ -45,7 +45,7 @@ function Testimonials() {
           return(
             <SwiperSlide key={index}>
               <div className="testimonial">
-                <img src={client.img} alt="Client Image" />
+                <img src={client.img} alt={client.img} />
                 <span>{client.review}</span>
               </div>
             </SwiperSlide>

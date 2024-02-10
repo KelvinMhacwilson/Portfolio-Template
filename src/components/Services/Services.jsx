@@ -7,13 +7,15 @@ import Card from '../Card/Card'
 import Resume from "./Resume.pdf"
 import { themeContext } from '../../Context'
 import { useContext } from 'react'
+import { motion } from 'framer-motion'
 
 
 function Services() {
+  const transition = {duration: 1, type: "spring" }
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode
   return (
-    <div className="services">
+    <div className="services" id="Services">
       {/* Left Side */}
       <div className="awesome">
         <span style={{color: darkMode ? "white" : ""}}>My Awesome</span>
@@ -32,13 +34,17 @@ function Services() {
 
       {/* Right Side */}
       <div className="cards">
-        <div style={{left: "14rem"}}> 
+        <motion.div 
+          whileInView={{ left: "14rem"}}
+          initial={{left: "25rem"}}
+          transition={transition}
+        style={{left: "14rem"}}> 
           <Card 
             emoji = {HeartEmoji}
             heading = "Design"
             detail = "Figma, Sketch, Photoshop, Adobe, Adobe xd"
           />
-        </div>
+        </motion.div>
 
         <div style={{left: "-4rem", top: "12rem"}}> 
           <Card 
